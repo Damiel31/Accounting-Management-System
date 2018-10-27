@@ -1,0 +1,3 @@
+C:\Users\Damiel\Desktop\AccountingManagementSystem\PayTuition\obj\Debug\PayTuition.csprojResolveAssemblyReference.cache
+C:\Users\Damiel\Desktop\AccountingManagementSystem\PayTuition\obj\Debug\PayTuition.Properties.Resources.resources
+C:\Users\Damiel\Desktop\AccountingManagementSystem\PayTuition\obj\Debug\PayTuition.csproj.GenerateResource.Cache

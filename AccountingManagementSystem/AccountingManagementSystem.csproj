@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48351AFE-F4E0-480E-BDD9-2DB27EC605C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccountingManagementSystem</RootNamespace>
+    <AssemblyName>AccountingManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.2.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditStudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentData.Designer.cs">
+      <DependentUpon>EditStudentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrolledStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrolledStudents.Designer.cs">
+      <DependentUpon>EnrolledStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollmentApplication.Designer.cs">
+      <DependentUpon>EnrollmentApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollSubject.Designer.cs">
+      <DependentUpon>EnrollSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogonF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogonF.Designer.cs">
+      <DependentUpon>LogonF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous.Designer.cs">
+      <DependentUpon>Miscellaneous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayTuition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayTuition.Designer.cs">
+      <DependentUpon>PayTuition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatementofAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatementofAcc.Designer.cs">
+      <DependentUpon>StatementofAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStudentData.Designer.cs">
+      <DependentUpon>ViewStudentData.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EditStudentData.resx">
+      <DependentUpon>EditStudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrolledStudents.resx">
+      <DependentUpon>EnrolledStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentApplication.resx">
+      <DependentUpon>EnrollmentApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollSubject.resx">
+      <DependentUpon>EnrollSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogonF.resx">
+      <DependentUpon>LogonF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous.resx">
+      <DependentUpon>Miscellaneous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayTuition.resx">
+      <DependentUpon>PayTuition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StatementofAcc.resx">
+      <DependentUpon>StatementofAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStudentData.resx">
+      <DependentUpon>ViewStudentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1433255207446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-dp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Use%2520professional%2520looking%2520profile-picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right-pointing_hand_in_green_octagon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGamblMoney01HL2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying_glass_private_eye_lg_clr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_n8gb71pSid1r6zgh0o1_500.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_ng29mdHVmi1u3bn17o1_1280.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginn.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
